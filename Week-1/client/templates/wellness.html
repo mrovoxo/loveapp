@@ -1,0 +1,19 @@
+<template name="wellness">
+{{> loginButtons}}
+<br>
+<!-- Josh: this code displays the "send note button" -->
+<body> <a class="btn btn-primary center-block" href="/wellnessSubmit" type="button">Send Wellness Note</a> </body>
+	<div class="notes">
+		<div class="form-style">
+			<div class="container">
+				<ul class="list-group">
+					<h3>Live feed of what people are saying around you</h3>
+					       <!-- <a class="btn btn-primary pull-right" href="/submit" type="button">Send Note</a> -->
+					{{#each notes}}
+						{{> wellnessItem}}
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
