@@ -37,6 +37,7 @@ e.preventDefault();
 		Meteor.call('noteInsert', note);
 		/*post._id = Notes.insert(post);*/
 		Router.go('notesList', post);
+		console.log("note: " + note);
 	}
 
 	// HEY ELTON: This IF ELSE statement above isn't working. I've tried to modify it so many times
